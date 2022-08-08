@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Textform from './components/Textform';
+import Home from './components/Home';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -33,7 +33,7 @@ function App() {
         <Routes>
           <Route exact path="/about" element={<About />}>  
           </Route>
-          <Route exact path="/" element={<Textform heading="Enter the text to Analyze"/>}>    
+          <Route exact path="/" element={<Home heading="Enter the text to Analyze"/>}>    
           </Route>
         </Routes>
       </div>
